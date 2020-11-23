@@ -1,0 +1,252 @@
+Looking for git in: git
+Using git 2.29.2 from git
+> git rev-parse --git-dir
+Open repository: /home/ghost/git/OhjelmistoProjekti2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git cat-file -s c3d149294bbb13eecd7253599bd2973d889ce305
+> git show --textconv :RaspberryServer/pom.xml
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/pom.xml
+> git cat-file -s 88db76593f41a4d4f0125ed863f2b0c1e931a811
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :RaspberryServer/src/main/resources/application.properties
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/resources/application.properties
+> git cat-file -s d66122bd8395f6cae0cd85462d3f3c397da48970
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git cat-file -s 1346e6143d5e2d264b60900e268388be1d7fae24
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git cat-file -s c3d149294bbb13eecd7253599bd2973d889ce305
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git cat-file -s 1346e6143d5e2d264b60900e268388be1d7fae24
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git cat-file -s 3091d1bbe8e0290fc089be1a8362f5bd49b7f11c
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/TimeStamp.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/TimeStamp.java
+> git cat-file -s 6f9a47a794a98759b346f6f7dd36fadaae55fcad
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git cat-file -s 3091d1bbe8e0290fc089be1a8362f5bd49b7f11c
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git rev-parse master
+> git cat-file -s 3091d1bbe8e0290fc089be1a8362f5bd49b7f11c
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git cat-file -s 1346e6143d5e2d264b60900e268388be1d7fae24
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git cat-file -s 3091d1bbe8e0290fc089be1a8362f5bd49b7f11c
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git cat-file -s c3d149294bbb13eecd7253599bd2973d889ce305
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/TimeStampRepository.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/TimeStampRepository.java
+> git cat-file -s 7e2f23cf66e6d0ccf0592c88e5a5f8ad667c4cc9
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git cat-file -s c3d149294bbb13eecd7253599bd2973d889ce305
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git cat-file -s 1346e6143d5e2d264b60900e268388be1d7fae24
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/Raspberry.java
+> git cat-file -s 3091d1bbe8e0290fc089be1a8362f5bd49b7f11c
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/TimeStamp.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/TimeStamp.java
+> git cat-file -s 6f9a47a794a98759b346f6f7dd36fadaae55fcad
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/domain/RaspberryRepository.java
+> git cat-file -s c3d149294bbb13eecd7253599bd2973d889ce305
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git cat-file -s 1346e6143d5e2d264b60900e268388be1d7fae24
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/pom.xml
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/pom.xml
+> git cat-file -s 88db76593f41a4d4f0125ed863f2b0c1e931a811
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/src/main/resources/application.properties
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/resources/application.properties
+> git cat-file -s d66122bd8395f6cae0cd85462d3f3c397da48970
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git cat-file -s 1346e6143d5e2d264b60900e268388be1d7fae24
+> git show --textconv :RaspberryServer/pom.xml
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/pom.xml
+> git cat-file -s 88db76593f41a4d4f0125ed863f2b0c1e931a811
+> git show --textconv :RaspberryServer/src/main/resources/application.properties
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/resources/application.properties
+> git cat-file -s d66122bd8395f6cae0cd85462d3f3c397da48970
+> git show --textconv :RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git ls-files --stage -- /home/ghost/git/OhjelmistoProjekti2/RaspberryServer/src/main/java/Ohjelmistoprojekti2/raspberryServer/RaspberryServerApplication.java
+> git cat-file -s 1346e6143d5e2d264b60900e268388be1d7fae24

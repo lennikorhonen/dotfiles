@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+/home/ghost/.config/Code - OSS/User/workspaceStorage/a45272a84feac736cd3c42dcce2232da/redhat.java/ss_ws/.metadata/.plugins/org.eclipse.jdt.core

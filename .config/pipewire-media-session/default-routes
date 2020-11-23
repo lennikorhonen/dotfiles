@@ -1,0 +1,4 @@
+alsa_card.pci-0000:01:00.1:output:hdmi-output-1 mute:0 volumes:2,1.000000,1.000000
+alsa_card.pci-0000:00:1f.3:output:analog-output-lineout mute:0 volumes:2,0.097166,0.097166
+alsa_card.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00:input:analog-input-headset-mic mute:0 volumes:2,1.000000,1.000000
+alsa_card.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00:output:analog-output mute:0 volumes:2,0.015849,0.015849

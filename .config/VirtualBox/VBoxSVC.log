@@ -1,0 +1,99 @@
+00:00:00.001052 main     VirtualBox XPCOM Server 6.1.16 r140961 linux.amd64 (Oct 20 2020 18:52:28) release log
+00:00:00.001054 main     Log opened 2020-11-15T15:18:03.775442000Z
+00:00:00.001055 main     Build Type: release
+00:00:00.001057 main     OS Product: Linux
+00:00:00.001058 main     OS Release: 5.8.18-1-MANJARO
+00:00:00.001060 main     OS Version: #1 SMP PREEMPT Sun Nov 1 14:10:04 UTC 2020
+00:00:00.001081 main     DMI Product Name: System Product Name
+00:00:00.001088 main     DMI Product Version: System Version
+00:00:00.001096 main     Firmware type: BIOS
+00:00:00.001128 main     Host RAM: 15937MB (15.5GB) total, 13264MB (12.9GB) available
+00:00:00.001131 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.001131 main     Process ID: 6668
+00:00:00.001132 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.002891 main     IPC socket path: /tmp/.vbox-ghost-ipc/ipcd
+00:00:00.110473 nspr-2   VirtualBox: object creation starts
+00:00:00.110533 nspr-2   Home directory: '/home/ghost/.config/VirtualBox'
+00:00:00.111274 nspr-2   HostDnsMonitor: initializing
+00:00:00.111445 nspr-2   NAT: resolv.conf: nameserver 195.197.54.100
+00:00:00.111455 nspr-2   NAT: resolv.conf: nameserver 212.54.0.3
+00:00:00.111464 nspr-2   HostDnsMonitor: updating information
+00:00:00.111475 nspr-2   HostDnsMonitor: old information
+00:00:00.111478 nspr-2     no server entries
+00:00:00.111480 nspr-2     no domain set
+00:00:00.111482 nspr-2     no search string entries
+00:00:00.111485 nspr-2   HostDnsMonitor: new information
+00:00:00.111487 nspr-2     server 1: 195.197.54.100
+00:00:00.111490 nspr-2     server 2: 212.54.0.3
+00:00:00.111492 nspr-2     domain: elisa-laajakaista.fi
+00:00:00.111494 nspr-2     search string 1: elisa-laajakaista.fi
+00:00:00.114339 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:00.114654 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.114837 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.115344 nspr-2   VirtualBox: object created
+00:00:05.896485 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:05.897096 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:27.036690 createBase Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:27.575872 nspr-2   Saving settings file "/home/ghost/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:00:27.577267 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:27.578280 nspr-3   Saving settings file "/home/ghost/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:00:27.579386 nspr-3   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:27.585364 nspr-4   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:27.589005 nspr-3   Saving settings file "/home/ghost/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:00:28.034506 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:28.057058 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:28.279171 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:28.280919 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:46.530241 nspr-2   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:46.533379 nspr-2   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:49.063276 nspr-4   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:49.069498 nspr-3   Saving settings file "/home/ghost/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:00:49.072029 nspr-2   Saving settings file "/home/ghost/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:00:49.137120 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:49.165885 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:49.170093 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:50.541200 nspr-4   Launched VM: 1342190576 pid: 6707 (0x1a33) frontend: GUI/Qt name: Debian
+00:00:50.586360 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:50.636484 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:50.639540 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:51.041474 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The virtual machine 'Debian' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:00:51.648341 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:51.679590 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:00:51.680541 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:07.392559 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:07.515578 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:08.250465 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:08.251702 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:08.253048 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:08.333530 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:08.334535 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:08.709393 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:08.739874 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:08.741202 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:38.441344 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:38.441583 nspr-2   Saving settings file "/home/ghost/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:01:38.579219 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:38.605234 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:38.606962 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:39.336610 nspr-3   Launched VM: 170206208 pid: 6737 (0x1a51) frontend: GUI/Qt name: Debian
+00:01:39.372726 nspr-5   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:39.428617 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:39.433145 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:39.839980 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The virtual machine 'Debian' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:01:40.431313 nspr-5   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:40.465944 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:40.467046 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true  aResultDetail=0
+00:01:48.439050 nspr-5   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:48.447380 nspr-3   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:48.451663 nspr-3   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:48.466429 nspr-2   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:48.471054 nspr-3   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:48.474142 nspr-3   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:48.489091 nspr-5   Saving settings file "/home/ghost/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:54.013354 main     VirtualBox: object deletion starts
+00:01:54.013399 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/ghost/VirtualBox VMs/Debian/Debian.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:01:54.013743 main     HostDnsMonitor: shutting down ...
+00:01:54.019648 main     HostDnsMonitor: shut down
+00:01:54.346537 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:01:59.019744 main     {00007f556c015220} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:01:59.019979 main     VirtualBox: object deleted

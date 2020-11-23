@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 2
+    },
+    "auditLog": "/home/ghost/.config/Code - OSS/User/workspaceStorage/a45272a84feac736cd3c42dcce2232da/redhat.java/.4fefdf12562ebff3c161084ab2852b1155704327-audit.json",
+    "files": [
+        {
+            "date": 1604915003121,
+            "name": "/home/ghost/.config/Code - OSS/User/workspaceStorage/a45272a84feac736cd3c42dcce2232da/redhat.java/client.log.2020-11-09",
+            "hash": "5fdc91ff8c7445db261c8a85630e6ca2"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+Config { font = "xft:mononoki:pixelsize=16:antialias=true:hinting=true"
+       , additionalFonts = ["xft:FontAwesome:pixelsize=13"]
+       , borderColor = "black"
+       , border = TopB
+       , bgColor = "#434c5e"
+       , fgColor = "#d8dee9"
+       , alpha = 255
+       , position = Top
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = True
+       , hideOnStart = False
+       , iconRoot = "/home/ghost/.xmonad/xpm"
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [
+                             -- Time and date
+                             Run Date "<fn=1>\xf133</fn> %b %d %Y (%H:%M)""date" 50
+                             -- Network up and down
+                           , Run Network "enp0s31f6" ["-t", "<fn=1>\xf0aa</fn> <rx>kb  <fn=1>\xf0ab</fn> <tx>kb"] 20
+                             -- CPU usage
+                           , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 20
+                           , Run Memory ["-t","Mem: <usedratio>%"] 20
+                             -- Disk space free
+                           , Run DiskU [("/", "<fn=1>\xf0c7</fn> hdd: <free> free")] [] 60
+
+                             --
+                           , Run Com "uname" ["-r"] "" 3600
+                           , Run UnsafeStdinReader
+                           ]
+       , sepChar = "%"
+       , alignSep = "}{"
+              , template = "<action=`xdotool key control+alt+g`><icon=haskell_20.xpm/> </action><fc=#666666>  |\
+              \%uname% | %cpu% | %memory% | %disku% | %enp0s31f6% }\
+                                                \{ <fc=#ee9a00>%date%</fc>"
+       }
+}

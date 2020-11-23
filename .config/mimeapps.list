@@ -1,0 +1,15 @@
+[Default Applications]
+application/octet-stream=mousepad.desktop
+application/pdf=qpdfview.desktop
+application/x-gettext-translation=mousepad.desktop
+application/xml=mousepad.desktop
+application/x-wine-extension-ini=mousepad.desktop
+text/plain=mousepad.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_home_ghost_eclipse_.desktop
+
+[Added Associations]
+x-scheme-handler/http=exo-web-browser.desktop;
+x-scheme-handler/https=exo-web-browser.desktop;
+inode/directory=exo-file-manager.desktop;
+x-scheme-handler/trash=exo-file-manager.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;
