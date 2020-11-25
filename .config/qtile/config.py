@@ -40,10 +40,19 @@ terminal = "alacritty"
 
 keys = [
     # The essentials
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod], "Return",
+        lazy.spawn(terminal),
+        desc="Launch terminal"),
     Key([mod], "p",
         lazy.spawn("dmenu_run -c -l 10"),
         desc="Dmenu run launcher"),
+    Key([mod], "Tab",
+        lazy.next_layout(),
+        desc="Toggle between layouts"),
+    # Sound
+    Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -1%")),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +1%")),
     # Switch between windows in current stack pane
     Key([mod], "k", lazy.layout.down(),
         desc="Move focus down in stack pane"),
@@ -72,7 +81,6 @@ keys = [
         desc="Toggle between split and unsplit sides of stack"),
 
     # Toggle between different layouts as defined below
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod, "shift"], "c", lazy.window.kill(), desc="Kill focused window"),
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart qtile"),
