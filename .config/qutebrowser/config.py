@@ -123,4 +123,8 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
-config.bind('M', 'hint links spawn mpv {hint-url}')
+config.bind('M', 'hint links spawn vlc {hint-url}')
+config.bind('W', 'hint links')
+config.bind('xb', 'config-cycle statusbar.show always never')
+config.bind('xt', 'config-cycle tabs.show always never')
+config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')

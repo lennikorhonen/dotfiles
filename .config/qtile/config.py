@@ -156,6 +156,15 @@ def init_widgets_list():
             foreground = colors[2],
             background = colors[0]
         ),
+        widget.Image(
+            filename = "~/.config/qtile/img/manjaro.jpg"
+        ),
+        widget.Sep(
+            linewidth = 0,
+            padding = 6,
+            foreground = colors[2],
+            background = colors[0]
+        ),
         widget.GroupBox(
             font = "mononoki",
             fontsize = 9,
@@ -192,6 +201,10 @@ def init_widgets_list():
             foreground = colors[6],
             background = colors[0],
             padding = 0
+        ),
+        widget.Systray(
+            background = colors[0],
+            padding = 5
         ),
         widget.TextBox(
             text = '',
@@ -254,10 +267,6 @@ def init_widgets_list():
             padding = 10,
             foreground = colors[0],
             background = colors[6]
-        ),
-        widget.Systray(
-            background = colors[0],
-            padding = 5
         ),
 
     ]
