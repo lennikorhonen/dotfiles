@@ -1,0 +1,14 @@
+add_newline = false
+
+[time]
+disabled = false
+format = '[\[$time\]]($style)'
+style = "blue"
+time_format = "%H:%M"
+utc_time_offset = "local"
+
+[git_branch]
+format = "$branch $remote"
+
+[git_status]
+format = '[\[$all_status\]]($style)'
