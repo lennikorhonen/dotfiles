@@ -1,3 +1,0 @@
-alsa_card.pci-0000:01:00.1 output:hdmi-stereo-extra1
-alsa_card.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00 output:analog-stereo+input:analog-stereo
-alsa_card.pci-0000:00:1f.3 output:analog-stereo

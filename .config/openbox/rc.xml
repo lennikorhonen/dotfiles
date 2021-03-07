@@ -340,8 +340,8 @@
       <action name="MoveResizeTo">
         <x>-2/120</x>
         <y>1/100</y>
-        <width>48/100</width>
-        <height>98/100</height>
+        <width>49/100</width>
+        <height>99/100</height>
       </action>
     </keybind>
     <keybind key="W-Left">
@@ -349,15 +349,15 @@
       <action name="MoveResizeTo">
         <x>+2/120</x>
         <y>+1/100</y>
-        <width>48/100</width>
-        <height>98/100</height>
+        <width>49/100</width>
+        <height>99/100</height>
       </action>
     </keybind>
     <keybind key="W-Up">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <width>95/100</width>
-        <height>95/100</height>
+        <width>98/100</width>
+        <height>98/100</height>
       </action>
       <action name="MoveToCenter"/>
     </keybind>

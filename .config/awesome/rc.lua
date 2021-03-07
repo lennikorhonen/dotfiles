@@ -2,21 +2,17 @@
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
--- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
 require("awful.autofocus")
--- Widget and layout library
 local wibox = require("wibox")
--- Theme handling library
 local beautiful = require("beautiful")
--- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
--- Enable hotkeys help widget for VIM and other apps
--- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+local xresources = require("beautiful.xresources")
+local dpi = xresources.apply_dpi
 
 -- Display conf
 local xrandr = require("xrandr")
@@ -25,7 +21,7 @@ local xrandr = require("xrandr")
 local volumearc_widget = require("awesome-wm-widgets.volumearc-widget.volumearc")
 
 -- CPU widget
-local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
+-- local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 
 -- Log out widget
 -- local logout = require("awesome-wm-widgets.experiments.logout-widget.logout")
@@ -42,7 +38,7 @@ local APW = require("apw/widget")
 -- another config (This code will only ever execute for the fallback config)
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
-                     title = "Oops, there were errors during startup!",
+                     title = "Errors during startup!",
                      text = awesome.startup_errors })
 end
 
@@ -73,11 +69,10 @@ local chosen_theme = themes[3]
 local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme)
 beautiful.init(theme_path)
 
--- Pulseaduio widget
--- local pulse = require("pulseaudio_widget")
+local top_panel = require("components.top-panel")
+local cpu_widget = require("widgets.cpu")
 
--- Optionally, change the notification timeout default of 1 second to 5.
--- pulse.notification_timeout_seconds = 3
+local bling = require("bling")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -85,10 +80,6 @@ editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
--- Usually, Mod4 is the key with a logo between Control and Alt.
--- If you do not like this or do not have such a key,
--- I suggest you to remap Mod4 to another key using xmodmap or other tools.
--- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
@@ -110,7 +101,6 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
 }
--- }}}
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
@@ -127,8 +117,8 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   }
                         })
 
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
-                                     menu = mymainmenu })
+-- mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
+   --                                   menu = mymainmenu })
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
@@ -137,9 +127,19 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
 
+local function format_progress_bar(bar)
+    bar.forced_width = dpi(100)
+    bar.shape = gears.shape.rounded_bar
+    bar.bar_shape = gears.shape.rounded_bar
+    bar.background_color = beautiful.xcolor8
+
+    return bar
+end
+
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+-- mytextclock = wibox.widget.textclock()
+local textclock = require("widgets.calendar")
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -201,7 +201,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }, s, awful.layout.layouts[1])
+    awful.tag({  "WWW", "DEV", "SYS", "DOC", "VBOX", "CHAT", "MUS", "VID", "GFX"}, s, awful.layout.layouts[1])
     -- awful.tag({ "dev", "www", "sys", "doc", "chat", "mus", }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
@@ -229,8 +229,12 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
-
+    s.mywibox = awful.wibar({ 
+        position = "top", 
+        screen = s,
+        ontop = true
+    })
+    -- s.mywibox:set_xproperty("WM_NAME", "panel")
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -240,19 +244,24 @@ awful.screen.connect_for_each_screen(function(s)
             s.mytaglist,
             s.mypromptbox,
         },
-        s.mytasklist, -- Middle widget
+        -- s.mytasklist, -- Middle widget
+        wibox.widget{
+            align = "center",
+            valign = "center",
+            widget = textclock
+        },
         { -- Right widgets
-            cpu_widget({
-                width = 70,
-                step_width = 2,
-                step_spacing = 0,
-                color = '#0078ff'
-            }),
+        --[[cpu_widget({
+            width = 70,
+            step_width = 2,
+            step_spacing = 0,
+            color = '#0078ff'
+        }),]]
+            --APW,
+            --cpu_widget,
             mykeyboardlayout,
-            APW,
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
-            mytextclock,
+            wibox.layout.margin(wibox.widget.systray(), 0, 0, 3, 3),
             s.mylayoutbox,
             logout.widget{
                 bg_color = "#3B4252", accent_color = "#88C0D0", text_color = '#D8DEE9',
@@ -261,16 +270,14 @@ awful.screen.connect_for_each_screen(function(s)
         },
     }
 end)
--- }}}
--- {{{ Mouse bindings
+-- Mouse bindings
 root.buttons(gears.table.join(
     awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
--- }}}
 
--- {{{ Key bindings
+-- Key bindings
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
@@ -362,8 +369,8 @@ globalkeys = gears.table.join(
     awful.key({ }, "XF86AudioMute", APW.ToggleMute),
 
     -- Prompt Dmenu
-    awful.key({ modkey },            "v",     function () 
-	awful.util.spawn("dmenu_run")end,
+    awful.key({ modkey },            "p",     function ()
+	awful.util.spawn("dmenu_run -c -l 10")end,
               {description = "dmenu run prompt", group = "launcher"}),
 
 	-- Firefox
@@ -391,10 +398,10 @@ globalkeys = gears.table.join(
                     history_path = awful.util.get_cache_dir() .. "/history_eval"
                   }
               end,
-              {description = "lua execute prompt", group = "awesome"}),
+              {description = "lua execute prompt", group = "awesome"})
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+     --awful.key({ modkey }, "å", function() menubar.show() end,
+       --       {description = "show the menubar", group = "launcher"})
 )
 
 clientkeys = gears.table.join(
@@ -635,3 +642,4 @@ end)
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("picom --config $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("nm-applet")
+awful.spawn.with_shell("xrandr --output DP-2 --mode 2560x1440 --pos 0x0 --rotate normal --output DVI-D-0 --mode 1920x1080 --pos 2560x0 --rotate normal --refresh 144.00")
