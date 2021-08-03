@@ -5,6 +5,7 @@
 [[ $- != *i* ]] && return
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
+export TERM=xterm-256color
 
 colors() {
 	local fgc bgc vals seq0
@@ -92,6 +93,10 @@ fi
 
 unset use_color safe_term match_lhs sh
 
+# Set neovim as default editor
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
@@ -146,8 +151,14 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+#Starship conf
+eval "$(starship init bash)"
 #Powerline conf
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
+# Configs for tilix
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi

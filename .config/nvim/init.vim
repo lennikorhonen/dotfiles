@@ -4,7 +4,6 @@ set noerrorbells
 set tabstop=4 softtabstop=4
 set expandtab
 set smartindent
-set relativenumber
 set nu
 set nowrap
 set smartcase
@@ -15,6 +14,8 @@ set undofile
 set incsearch
 set encoding=UTF-8
 set splitbelow splitright
+set relativenumber
+set clipboard+=unnamedplus
 
 "--------------------------------------------------
 " => plugins
@@ -22,8 +23,11 @@ set splitbelow splitright
 call plug#begin('~/local/share/nvim/plugged')
 
 " => Theme plugins
+Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
+Plug 'romgrk/doom-one.vim'
 
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
@@ -36,24 +40,21 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'python-mode/python-mode'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Vim hardmode plugin
-Plug 'wikitopian/hardmode'
-
 call plug#end()
 
 "--------------------------------------------------
 " => colorscheme
 "--------------------------------------------------
+"colorscheme nord
 colorscheme onedark
 "colorscheme gruvbox
-set background=dark
+"set background=dark
 
 "--------------------------------------------------
 " => keybindings
 "--------------------------------------------------
 let mapleader=","
 map <Leader>tt :vnew term://fish<CR>
-
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
@@ -102,7 +103,7 @@ let g:coc_global_extensions = [
 " => lightline
 "--------------------------------------------------
 let g:lightline = {
-        \ 'colorscheme': 'one',
+        \ 'colorscheme': 'powerlineish',
         \ }
 
 set laststatus=2
